@@ -1,0 +1,12 @@
+REPORT ZKD_ABAP_ALV_ODEV.
+
+INCLUDE ZKD_ALV_ODEV_TOP.
+
+INCLUDE ZKD_ALV_ODEV_CLS.
+
+INCLUDE ZKD_ALV_ODEV_MDL.
+
+
+START-OF-SELECTION.
+   Create object go_main.
+  go_main->main_run( ).
