@@ -1,0 +1,19 @@
+*&---------------------------------------------------------------------*
+*&  Include           ZKD_ALV_ODEV_TOP
+*&---------------------------------------------------------------------*
+CLASS LCL_MAIN DEFINITION DEFERRED.
+CLASS LCL_EVENT_RECEIVER DEFINITION DEFERRED.
+
+DATA: GT_ITAB TYPE TABLE OF ZKD_ALV_ODEV_TAB,
+      GS_ITAB TYPE  ZKD_ALV_ODEV_TAB.
+
+DATA: CUSTOM_M    TYPE REF TO CL_GUI_CUSTOM_CONTAINER,
+      GRID_MO     TYPE REF TO CL_GUI_ALV_GRID,
+      GT_FIELDCAT TYPE LVC_T_FCAT,
+      GS_FIELDCAT TYPE LVC_S_FCAT,
+      GS_VARIANT  TYPE DISVARIANT,
+      GS_LAYOUT   TYPE LVC_S_LAYO.
+
+
+DATA: GO_MAIN           TYPE REF TO LCL_MAIN,
+      GO_EVENT_RECEIVER TYPE REF TO LCL_EVENT_RECEIVER.
